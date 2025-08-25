@@ -1,0 +1,10 @@
+<div class="card">
+  <h2>Register</h2>
+  <div class="notice" ng-if="msg">{{msg}}</div>
+  <form ng-submit="submit()">
+    <input type="text" ng-model="data.username" placeholder="Username" required/>
+    <input type="email" ng-model="data.email" placeholder="Email" required/>
+    <input type="password" ng-model="data.password" placeholder="Password" required/>
+    <button class="btn" type="submit">Register</button>
+  </form>
+</div>

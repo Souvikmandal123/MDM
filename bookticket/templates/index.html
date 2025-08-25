@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="AuthApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Django + AngularJS Auth</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular-route.min.js"></script>
+  <link rel="stylesheet" href="/static/styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>OTP Authentication</h1>
+    <nav>
+      <a href="#!/register">Register</a> |
+      <a href="#!/login">Login</a>
+    </nav>
+    <div ng-view class="view"></div>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

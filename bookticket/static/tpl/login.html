@@ -1,0 +1,9 @@
+<div class="card">
+  <h2>Login</h2>
+  <div class="notice" ng-if="msg">{{msg}}</div>
+  <form ng-submit="submit()">
+    <input type="email" ng-model="data.email" placeholder="Email" required/>
+    <input type="password" ng-model="data.password" placeholder="Password" required/>
+    <button class="btn" type="submit">Send OTP</button>
+  </form>
+</div>
